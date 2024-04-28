@@ -4,11 +4,13 @@
 
 (deftest process_given-2_should-be-2
   (testing "(process 2) should be 2"
-    (is (= (process 2) 2))))
+    (let [result (process 2)]
+      (is (= result 2)))))
 
 (deftest process_given-5_should-be-fizz
   (testing "(process 5) should be Fizz"
-    (is (= (process 5) "Fizz"))))
+    (let [result (process 5)]
+      (is (= result "Fizz")))))
 
 (deftest process_given-7_should-be-buzz
   (testing "(process 7) should be Buzz"
@@ -22,4 +24,5 @@
 
 (deftest process_given-99_should-be-99
   (testing "(process 99) should be 99"
-    (is (= (process 99) 99))))
+    (let [result (process 99)]
+      (is (= result 99)))))
